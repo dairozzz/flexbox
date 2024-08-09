@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav{
+  height:80px;
+  width: 100%;
+  background-color: black;
+}
+
+.logo{
+  transition: 0s;
+  flex: 0;
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+
+.navegador__texto{
+  color: white;
+  text-decoration: none;
+}
