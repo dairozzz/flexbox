@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+ --slider: 0px;
+}
+
+.contenedor{
+  width: 350px;
+  height: 600px;
+  background-color: black;
+  margin: 0 auto;
+  overflow-x: hidden;
+  margin-top: 80px;
+  --slider: 0;
+}
+
+.tabs::has(.input-status){
+ --slider: 350px;
+}
+
+.item{
+  width: calc(350px*3);
+  /* height: 650px; toca restarle*/
+  height: calc(600px - 60px);
+  background-color: grey;
+  position: relative;
+  display: flex;
+  left: var(--slider);
+}
+
+.chats{
+  width: 350px;
+  height: 650px;
+
+}
+
+.chats:nth-child(1){
+  background-color: green
+}
+
+.chats:nth-child(2){
+  background-color: blue
+}
+
+.chats:nth-child(3){
+  background-color: chartreuse;
+}
+
+.tabs{
+  height: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+
+.tabs input{
+  display: none;
+}
+
